@@ -2,7 +2,7 @@ const Tx = require('ethereumjs-tx').Transaction
 require('dotenv').config()
 const Web3 = require('web3')
 const web3 = new Web3(`https://ropsten.infura.io/v3/${process.env.infura_api_key}`)
-
+// if use kovan, can switch to https://kovan.infura.io/v3/${process.env.infura_api_key}
 const privateKey = Buffer.from(process.env.PRIVATE_KEY,'hex')
 console.log(privateKey)
 
